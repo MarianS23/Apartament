@@ -1,0 +1,517 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+
+:root {
+        --primary-color: black; 
+        
+}
+
+* {
+        /*border-color: black;
+        border-style: solid;
+        border-width: 1px;*/
+        font-family: 'Lobster', cursive;
+        margin:0;
+        padding:0;
+}
+body {
+        max-width: 980px;
+        min-width: 320px;
+        margin:auto;
+        
+}
+
+   /*хедер*/ 
+
+header #language {
+        text-align: right;
+        padding-top: 10px;
+        padding-right: 10px;
+        margin-bottom: 20px;
+}
+
+header #language a {
+        margin-right: 5px;
+        text-decoration: none;
+        color: var(--primary-color)
+}
+header #language a:hover {
+        color:green;
+}
+
+header .main_logo h1  {
+        font-size: 38px;
+        text-align: center;
+        margin-top: 15px;
+        margin-bottom: 0;
+        
+}
+header .main_logo h1 a {
+        text-decoration: none;
+        color: black;
+}
+
+header .main_logo h2 {
+        font-size:25px;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top:-5px;
+}
+
+header .main_menu .main_menu_list {
+        display: flex;
+        list-style-type: none;
+        justify-content: space-around;
+        margin-bottom: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        
+}
+header .main_menu .main_menu_list li a{
+        text-decoration: none;
+        color: var(--primary-color)
+        
+}
+header .main_menu .main_menu_list li a:hover {
+        color: green;
+}
+
+/*спільне для всіх сайтів*/
+
+
+
+
+
+
+
+
+/*основна частина сайту*/
+
+main #slide_menu img {
+        display: none;
+}
+main .textatcenter {
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+}
+main .textabout p {
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        text-align: center;
+}
+main .contact_area .contacts {
+        display: flex;
+        justify-content:space-around;
+        align-items:center;
+        list-style-type: none;
+        margin-top: 30px;
+        margin-bottom: 20px;
+}
+main .contact_area .contacts li a {
+        list-style: none;
+}
+main .contact_area .contacts li a img {
+        width: 50px;
+        border-radius: 10px;
+}
+hr {
+        margin-top: -15px;
+        margin-bottom: 30px;
+}
+ /*лінії на сайті*/
+
+.hline {
+        display: none;
+}
+.hline_footer {
+        display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   /*форма*/
+input ,textarea[placeholder] {
+        
+        font-size: 15px;
+}   
+main .conect #conectus {
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+}
+main .conect #conectus label {
+        align-items:center;
+        text-align: center;
+        font-size: 18px;
+        
+}
+main .conect #conectus label p {
+        margin-bottom: -15px;
+        margin-top: -10px;
+}
+main .conect #conectus label input {
+        width:200px;
+        height: 25px;
+        border-style: solid;
+        border-width: 0.5px;
+        border-radius: 3px;
+        border-color: green;
+        
+}
+
+main .conect #conectus textarea {
+        margin-top: 25px;
+        width: 200px;
+        height: 40px;
+        border-style: solid;
+        border-width: 0.5px;
+        border-radius: 3px;
+        border-color: green;
+}
+main .conect .textatcenter {
+        margin-bottom: 35px;
+}
+main .conect #conectus .conectus_button {
+        width: 200px;
+        text-align: center;
+        margin-top: 15px;
+}
+main .conect #conectus .conectus_button input {
+        font-size: 15px;
+        border-style: solid;
+        border-width: 0.5px;
+        border-radius: 4px;
+        border-color:green;
+        padding:5px;
+}
+
+
+main .conect #conectus .conectus_button input:hover {
+        color:white;
+        background-color: green;
+      
+}
+
+     /*форма*/
+
+
+
+
+     
+main .phonenumber .textatcenter {
+        margin-bottom: 5px;
+}
+main .phonenumber p {
+        text-align: center;
+}
+
+footer p {
+        display: none;
+}
+
+
+
+
+/*contactspages*/
+
+#partnership .send_message_area #work_form {
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+}
+
+#partnership .send_message_area #work_form .your_phone p {
+        text-align: center;
+}
+#partnership .send_message_area #work_form div {
+        margin-bottom: 0px;
+        
+
+
+}
+#partnership .send_message_area #work_form label p {
+        text-align: center;
+        margin-bottom: -15px;
+        margin-top: -10px;
+        font-size: 18px;
+        
+}
+#partnership .send_message_area #work_form label input {
+        width:200px;
+        height: 25px;
+        border-style: solid;
+        border-width: 0.5px;
+        border-radius: 3px;
+        border-color: green;
+        margin: 0px;
+}
+
+#partnership .send_message_area #work_form .radio_question  {
+        width: 200px;
+        text-align: center;
+        display: flex;
+        align-items:center;
+
+}
+
+        
+#partnership .send_message_area #work_form .radio_question label p{
+        padding-bottom: 13px;
+     
+       
+        
+        
+        
+}
+#partnership .send_message_area #work_form .radio_question label input {
+        width: 40px;
+        
+        
+}
+
+#partnership .send_message_area #work_form .conectus_button {
+        width: 200px;
+        text-align: center;
+        margin-top: 15px;
+}
+#partnership .send_message_area #work_form .conectus_button input {
+        font-size: 15px;
+        border-style: solid;
+        border-width: 0.5px;
+        border-radius: 4px;
+        border-color:green;
+        padding:5px;
+}
+#partnership .send_message_area #work_form .conectus_button input:hover {
+        color:white;
+        background-color: green;
+}
+
+
+
+/*apartamentspages*/
+
+#apartaments .apart_block {
+        display: flex;
+        flex-direction:column;
+        align-items:center;
+}
+#apartaments .apart_block img {
+        display: block;
+        width: 100%;
+}
+#apartaments .apart_block input {
+        border-color: green;
+        border-width: 0.5px;
+        border-style: solid;
+        
+}
+#apartaments .apart_block input:hover {
+        color:white;
+        background-color: green;
+}
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*змінні параметри */
+@media (min-width: 450px) {
+        header .main_logo h1 {
+                font-size:55px;
+        }
+        header .main_logo h2 {
+                font-size:35px;
+        }
+        header .main_menu .main_menu_list li a {
+                font-size: 20px;
+        }
+        main .contact_area .contacts  {
+        display: flex;
+        justify-content:center;
+        
+        }
+        main .contact_area .contacts li {
+        margin-left: 20px;
+        margin-right: 20px;
+        }
+        main .conect #conectus label input {
+        width:300px;
+        height: 35px;
+        }
+        main .conect #conectus label p {
+        font-size:20px;
+        
+        }
+        input[placeholder] {
+                font-size: 17px;
+        }
+        main .conect #conectus .conectus_button {
+        width: 300px;
+        }
+        main .conect #conectus .conectus_button input {
+        font-size: 20px;
+        }
+        main .conect #conectus textarea {
+        width: 300px;
+        height: 60px;
+        }
+        main .conect #conectus textarea[placeholder] {
+                font-size: 15px;
+        }
+        
+        
+        /*contactspages*/
+        #partnership .send_message_area #work_form label p {
+                font-size: 20px;
+        }
+        #partnership .send_message_area #work_form label input {
+                width:300px;
+                height: 35px;
+        }
+        #partnership .send_message_area #work_form .conectus_button {
+                width: 300px;
+        }
+        #partnership .send_message_area #work_form .conectus_button input {
+                font-size: 20px;
+        }
+        #partnership .send_message_area #work_form .radio_question  {
+                width: 300px;
+        }
+        
+        
+
+}
+
+
+@media (min-width: 980px) {
+        header .main_logo h2 {
+        margin-bottom: 50px;
+        }
+        header #language a{
+                font-size: 20px;
+        }
+        header .main_logo h1 {
+                font-size:75px;
+        }
+        header .main_logo h2 {
+                font-size:45px;
+        }
+        header .main_menu .main_menu_list li a {
+                font-size: 25px;
+        }
+        
+        main #slide_menu img {
+                margin:auto;
+                display: block;
+                
+        }
+        main .textatcenter {
+                font-size:20px;
+        }
+        main .textatcenter {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        font-size: 30px;
+        }
+        main .textabout p {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+        font-size: 25px;
+        }
+        main .contact_area .contacts  {
+        
+        display: flex;
+        justify-content:center;
+        
+        }
+        main .contact_area .contacts li {
+        margin-left: 20px;
+        margin-right: 20px;
+        }
+        .hline {
+                margin-top: 20px;
+                display: block;
+        }
+        main .conect #conectus label input {
+        width:400px;
+        height: 50px;
+        }
+        main .conect #conectus label p {
+        font-size:25px;
+        
+        }
+        input[placeholder] {
+                font-size: 20px;
+        }
+        main .conect #conectus textarea {
+        width: 400px;
+        height: 60px;
+        }
+        main .conect #conectus textarea[placeholder] {
+                font-size: 20px;
+        }
+        main .phonenumber p {
+                font-size: 20px;
+        }
+        #partnership .send_message_area #work_form label p {
+                font-size: 25px;
+        }
+        #partnership .send_message_area #work_form label input {
+                width:400px;
+                height: 50px;
+        }
+        #partnership .send_message_area #work_form .radio_question  {
+                width: 400px;
+        }
+        
+        
+        
+        
+        
+        
+        
+        .hline_footer {
+                display: block;
+                margin:10px 0px 20px 0px;
+        }
+        footer {
+                min-height: 50px;
+        }
+        footer p {
+                display: block;
+                font-size: 15px;
+                text-align: right;
+                margin:10px 0px 10px 0px;
+        }
+        
+}

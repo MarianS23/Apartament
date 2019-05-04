@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Apartament in Lviv</title>
+    <link rel="stylesheet" href="../css/common.css" type="text/css" />
+</head>
+<body>
+    <header>
+        <nav id="language">
+            <a href="#" title="ссилка для зміни мови на англійську">Eng</a>
+            <a href="../index.html" title="link to change language of the page from english to ukraine">UA</a>
+        </nav>
+        <div class="main_logo">
+            <h1><a href="../index.html">Apartaments in Lviv</a></h1>
+            <h2>quality and comfort</h2>
+        </div>
+        <nav class="main_menu">
+            <ul class="main_menu_list">
+                <li><a href="../index.html" title="перейти на головну сторінку">Головна</a></li>
+                <li><a href="../apartamentpages/apart.html" title="перейти до переліку апартаментів">Апартаменти</a></li>
+                <li><a href="../contactspages/contact.html" title="перейти до контактів">Співпраця</a></li>
+            </ul>
+        </nav>
+    </header><hr>
+    <main id="partnership">
+        <div class="send_message_area">
+            <h2 class="textatcenter">Для співпраці заповніть форму </h2>
+            <form  id="work_form" action="https://formspree.io/maryanshutov@gmail.com" method="post">
+                <div>
+                    <label><p>Ваше ім'я:</p><br><input type="text" name="user_name" placeholder=" Ваше імя" required></label>
+                </div><br>
+                <div>
+                    <label><p>Ваша фамілія:</p><br><input type="text" name="user_surname" placeholder=" Ваша фамілія" required ></label>
+                </div><br>
+                <div class="your_phone">
+                    <label><p>Ваш номер телефону</p><br><input type="tel" name="phone"  placeholder=" Ваш номер телефону" pattern="[0-9]{,2}-[0-9]{,3}-[0-9]{,2}-[0-9]{,2}" required/></label><br>
+                    <p>формат:(+380)-xx-xxx-xx-xx</p>
+                </div><br>
+                
+                <div>
+                    <label><p>Ваш email:</p><br><input type="email" name="user_email" placeholder=" Ваш email" required ></label>
+                </div><br>
+                <div class="radio_question">
+                   <label><p>Як з Вами звязатись?</p></label>
+                    <label>Вайбер<input type="radio" name="waytoconect" value="viber"></label><br>
+                    <label>Email<input type="radio" name="waytoconect" value="email"></label>
+                </div>
+                <div class="conectus_button">
+                    
+                    <input type="submit" name="button" value="Відправити">
+                    <input type="reset" name="button" value="Скинути">
+                    
+                </div>
+            </form>
+        </div>
+        <br>
+    </main>
+    <footer>
+        <hr class="hline_footer">
+        <p>page 404</p>
+    </footer>
+</body>
+    
+        
+</html>

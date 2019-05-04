@@ -5,41 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Apartament in Lviv</title>
-    
+    <link rel="stylesheet" href="css/common.css" type="text/css" />
 </head>
 <body>
     <header>
-        <div class="language">
-            <ul>
-                <li><a href="indexeng.html" title="ссилка для зміни мови на англійську">Eng</a></li>
-                <li><a href="index.html" title="link to change language of the page from english to ukraine">UA</a></li>
-            </ul>
-        </div>
+        <nav id="language">
+            <a href="#" title="ссилка для зміни мови на англійську">Eng</a>
+            <a href="index.html" title="link to change language of the page from english to ukraine">UA</a>
+        </nav>
         <div class="main_logo">
-            <h1>Apartaments in Lviv</h1>
+            <h1><a href="index.html">Apartaments in Lviv</a></h1>
             <h2>quality and comfort</h2>
         </div>
         <nav class="main_menu">
             <ul class="main_menu_list">
                 <li><a href="index.html" title="перейти на головну сторінку">Головна</a></li>
-                <li><a href="#" title="перейти до галереї">Галерея</a></li>
-                <li><a href="#" title="перейти до контактів">Контакти</a></li>
-                <li><a href="#" title="перейти до переліку апартаментів">Апартаменти</a></li>
+                <li><a href="apartamentpages/apart.html" title="перейти до переліку апартаментів">Апартаменти</a></li>
+                <li><a href="contactspages/contact.html" title="перейти до сторінки співпраці">Співпраця</a></li>
             </ul>
         </nav>
-    </header>
+    </header><hr>
     <main>
         <div id="slide_menu">
-            
+        <img src="img/slaider.png" alt="slaider">
+         <!--тут буде слайдер-->   
             
         </div>
         
         <div class="textabout">
             <h2 class="textatcenter">Про нас </h2>
             <p>Ми надаємо якісні житлові послуги вже більше 3 років,
-            у нас є велика мережа власників квартир по всьому львові,
+            у нас є велика мережа власників квартир по всьому Львові,
             тому ми можемо задовольнити будь-які Ваші побажання щодо вартості, розташування та стилю апартаментів</p>
-        </div>
+        </div><hr class="hline">
         <div class="contact_area">
             <h2 class="textatcenter">Ми в соціальних мережах</h2>
             <ul class="contacts">
@@ -48,36 +46,42 @@
                 <li><a href="#" title="лінк для переходу на airbnb"><img src="img/airbnb_logo.png" alt="ображення логотипу ейрбінбі"></a></li>
                 <li><a href="#" title="лінк для переходу на OLX"><img src="img/olx_logo.jpg" alt="ображення логотипу olx"></a></li>
             </ul>
-        </div>
-        <div class="send_message_area">
-            <h2 class="textatcenter">Для співпраці заповніть форму </h2>
-            <form action="https://formspree.io/maryanshutov@gmail.com" method="post">
+        </div><hr class="hline">
+        <div class="conect">
+            <h2 class="textatcenter">Зв'язок з нами</h2>
+            <form  id="conectus" action="#" method="post">
                 <div>
-                    <label>Ваше імя: <input type="text" name="user_name" placeholder="Ваше імя" required></label>
+                    <label><p>Ваше імя:</p><br><input type="text" name="user_name" placeholder=" Ваше імя" required></label>
                 </div><br>
                 <div>
-                    <label>Ваша фамілія: <input type="text" name="user_surname" placeholder="Ваша фамілія" required ></label>
+                    <label><p>Ваша фамілія:</p><br><input type="text" name="user_surname" placeholder=" Ваша фамілія" required ></label>
                 </div><br>
                 <div>
-                    <label>Ваш номер: телефону <input type="tel" name="phone" value="+380" placeholder="Ваш номер телефону" pattern="[0-9]{,2}-[0-9]{,3}-[0-9]{,2}-[0-9]{,2}" required/></label>
-                    <p>формат:(+380)-xx-xxx-xx-xx</p>
+                    <label><p>Ваш email:</p><br><input type="email" name="user_email" placeholder=" Ваш email" required ></label>
                 </div><br>
-                <div>
-                    <label>Ваш email: <input type="email" name="user_email" placeholder="Ваш email" required ></label>
-                </div><br>
-                <div>
-                   <label>Як з Вами звязатись? </label>
-                    <label>Вайбер<input type="radio" name="waytoconect" value="viber"></label>
-                    <label>Email<input type="radio" name="waytoconect" value="email"></label>
-                </div>
-                <div>
+                <label>
+                    <p>Ваше повідомлення</p>
+                    <textarea name="textareaname" placeholder=" Ваше повідомлення"></textarea><br>
+                </label>
+                <div class="conectus_button">   
                     <input type="submit" name="button" value="Відправити">
                     <input type="reset" name="button" value="Скинути">
+                </div>     
+            </form> 
+                <div class="phonenumber">
+                    <h2 class="textatcenter">Мобільні номери</h2>
+                    <p>Lifecell:+38063-XX-XX-XXX</p>
+                    <p>Київстар:+38097-XX-XX-XXX</p>
+                    <br>
                 </div>
-            </form>
         </div>
         
     </main>
+    
+    <footer>
+        <hr class="hline_footer">
+        <p>сайт розроблено за допомогою cloud9</p>
+    </footer>
 
     
     
