@@ -5,6 +5,18 @@
         
 }
 
+
+input[type="reset"],[type="submit"]:focus {
+        outline:none;
+}
+
+input:focus {
+        outline-color:#1c9c1c;
+}
+textarea:focus {
+       outline-color:#1c9c1c; 
+}
+
 * {
         /*border-color: black;
         border-style: solid;
