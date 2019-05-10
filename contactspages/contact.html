@@ -30,21 +30,21 @@
             <h2 class="textatcenter">Для співпраці заповніть форму </h2>
             <form  id="work_form" action="https://formspree.io/maryanshutov@gmail.com" method="post">
                 <div>
-                    <label><p>Ваше ім'я:</p><br><input type="text" name="user_name" placeholder=" Ваше імя" required></label>
+                    <label><span>Ваше ім'я:</span><br><input type="text" name="user_name" placeholder=" Ваше імя" required></label>
                 </div><br>
                 <div>
-                    <label><p>Ваша фамілія:</p><br><input type="text" name="user_surname" placeholder=" Ваша фамілія" required ></label>
+                    <label><span>Ваша фамілія:</span><br><input type="text" name="user_surname" placeholder=" Ваша фамілія" required ></label>
                 </div><br>
                 <div class="your_phone">
-                    <label><p>Ваш номер телефону</p><br><input type="tel" name="phone"  placeholder=" Ваш номер телефону" pattern="[0-9]{,2}-[0-9]{,3}-[0-9]{,2}-[0-9]{,2}" required/></label><br>
-                    <p>формат:(+380)-xx-xxx-xx-xx</p>
+                    <label><span>Ваш номер телефону</span><br><input type="tel" name="phone"  placeholder=" Ваш номер телефону" pattern="[0-9]{,2}-[0-9]{,3}-[0-9]{,2}-[0-9]{,2}" required/></label><br>
+                    <span>формат:(+380)-xx-xxx-xx-xx</span>
                 </div><br>
                 
                 <div>
-                    <label><p>Ваш email:</p><br><input type="email" name="user_email" placeholder=" Ваш email" required ></label>
+                    <label><span>Ваш email:</span><br><input type="email" name="user_email" placeholder=" Ваш email" required ></label>
                 </div><br>
                 <div class="radio_question">
-                   <label><p>Як з Вами звязатись?</p></label>
+                   <label><span>Як з Вами звязатись?</span></label>
                     <label>Вайбер<input type="radio" name="waytoconect" value="viber"></label><br>
                     <label>Email<input type="radio" name="waytoconect" value="email"></label>
                 </div>
@@ -60,8 +60,14 @@
     </main>
     <footer>
         <hr class="hline_footer">
+        <div class="date_time">
+        <div class="clock"></div>
+        <div class="calendar"></div>
+        </div> 
         <p>page 404</p>
     </footer>
+    
+    <script src="js/index.js" async ></script>
 </body>
     
         

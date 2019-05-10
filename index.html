@@ -9,8 +9,8 @@
 </head>
 <body>
     <header>
-        <nav id="language">
-            <a href="#" title="ссилка для зміни мови на англійську">Eng</a>
+         <nav id="language">
+            <a href="indexEng.html" title="ссилка для зміни мови на англійську">Eng</a>
             <a href="index.html" title="link to change language of the page from english to ukraine">UA</a>
         </nav>
         <div class="main_logo">
@@ -51,17 +51,18 @@
             <h2 class="textatcenter">Зв'язок з нами</h2>
             <form  id="conectus" action="#" method="post">
                 <div>
-                    <label><p>Ваше імя:</p><br><input type="text" name="user_name" placeholder=" Ваше імя" required></label>
+                    <label><span>Ваше імя:</span><br><input type="text" name="user_name" placeholder=" Ваше імя" required></label>
                 </div><br>
                 <div>
-                    <label><p>Ваша фамілія:</p><br><input type="text" name="user_surname" placeholder=" Ваша фамілія" required ></label>
+                    <label><span>Ваша фамілія:</span><br><input type="text" name="user_surname" placeholder=" Ваша фамілія" required ></label>
                 </div><br>
                 <div>
-                    <label><p>Ваш email:</p><br><input type="email" name="user_email" placeholder=" Ваш email" required ></label>
+                    <label><span>Ваш email:</span><br><input type="email" name="user_email" placeholder=" Ваш email" required ></label>
                 </div><br>
                 <label>
-                    <p>Ваше повідомлення</p>
-                    <textarea name="textareaname" placeholder=" Ваше повідомлення"></textarea><br>
+                    <span>Ваше повідомлення</span><br>
+                    <textarea name="textareaname" placeholder=" Ваше повідомлення"></textarea>
+                    <br>
                 </label>
                 <div class="conectus_button">   
                     <input type="submit" name="button" value="Відправити">
@@ -80,10 +81,14 @@
     
     <footer>
         <hr class="hline_footer">
+        <div class="date_time">
+        <div class="clock"></div>
+        <div class="calendar"></div>
+        </div> 
         <p>сайт розроблено за допомогою cloud9</p>
     </footer>
 
     
-    
+    <script src="js/index.js" async ></script>
 </body>
 </html>
