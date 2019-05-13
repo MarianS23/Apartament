@@ -3,4 +3,4 @@ setInterval( () => clockContainer.innerText = (new Date()).toLocaleTimeString(),
 
 const dateContainer = document.querySelector('.calendar');
 setInterval( () => dateContainer.innerText = (new Date()).toLocaleDateString(), 1000);
-
+ 

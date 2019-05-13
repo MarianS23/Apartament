@@ -166,6 +166,7 @@ main .conect #conectus {
 main .conect #conectus label {
         align-items:center;
         text-align: center;
+        margin:0px;
         
         
 }
@@ -184,7 +185,7 @@ main .conect #conectus label input {
         
 }
 main .conect #conectus textarea {
-        margin-top: 25px;
+        margin-top: 0px;
         width: 200px;
         height: 40px;
         border-style: solid;
@@ -220,10 +221,11 @@ main .conect #conectus .conectus_button input:hover {
 
      
 main .phonenumber .textatcenter {
-        margin-bottom: 5px;
+        margin-bottom: 15px;
 }
 main .phonenumber p {
         text-align: center;
+        margin-bottom: 8px;
 }
 
 footer p {
@@ -514,14 +516,6 @@ footer p {
                 flex-direction:row;
                 margin:10px 0px 10px 0px;
         }
-        body footer .date_time  {
-                width: 50%;
-        }
-        body footer .date_time .clock {
-                margin-right:10px;
-                width: 60px;
-        }
-        
         body footer p {
                 width: 50%;
         }
