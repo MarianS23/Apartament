@@ -50,6 +50,7 @@ header #language a {
 header #language a:hover {
         color:green;
 }
+
 header .main_logo h1  {
         font-size: 38px;
         text-align: center;
@@ -79,6 +80,21 @@ header .main_menu .main_menu_list li a{
         color: var(--primary-color)
 }
 header .main_menu .main_menu_list li a:hover {
+        color: green;
+}
+header .main_menu .main_menu_list li a:active {
+        color: green;
+}
+header .main_menu .main_menu_list li {
+        display: flex;
+        flex-direction: column;
+}
+header .main_menu .main_menu_list li i {
+        display: flex;
+        justify-content: space-around;
+        margin-top: -5px;
+}
+header #language .active {
         color: green;
 }
 
@@ -228,7 +244,12 @@ main .phonenumber p {
         margin-bottom: 8px;
 }
 
-footer p {
+
+
+/*footer*/
+
+
+#footer {
         display: none;
 }
 
@@ -326,13 +347,41 @@ footer p {
         color:white;
         background-color: green;
 }
-        
 
 
 
 
 
 
+#go-top {
+        font-size: 18px;
+        position: fixed;
+        bottom: 25px;
+        right: 30px;
+        text-align: center;
+        cursor: pointer;
+        display: none;
+        width: 60px;
+        height: 25px;
+        background: black;
+        line-height: 30px;
+        border-radius: 5px;
+        color: white;
+}
+
+#go-top:hover {
+        background: green;
+        color: #fff;
+}
+
+
+/*html body header nav.main_menu ul.main_menu_list li .active {
+        color: green;
+}*/
+ 
+html body header #language .active {
+       
+}
 
 
 
@@ -427,12 +476,6 @@ footer p {
         header .main_menu .main_menu_list li a {
                 font-size: 25px;
         }
-        
-        main #slide_menu img {
-                margin:auto;
-                display: block;
-                
-        }
         main .textatcenter {
                 font-size:20px;
         }
@@ -496,6 +539,29 @@ footer p {
         }
         
         
+        /*upbutton*/
+        #go-top {
+                font-size: 25px;
+                position: fixed; 
+                bottom: 25px; 
+                right: 70px;
+                text-align: center;
+                cursor:pointer; 
+                display:none;
+                width: 100px;
+                height: 30px;
+                background: black;
+                line-height: 30px;
+                border-radius: 5px;
+                color:white;
+        }
+
+        #go-top:hover {
+                background: green;
+                color: #fff;
+        }
+        
+        
         
         
         
@@ -505,22 +571,26 @@ footer p {
                 display: block;
                 margin:10px 0px 20px 0px;
         }
-        footer {
-                min-height: 50px;
-             
+        #footer {
+                display: block;
         }
-        footer p {
+        #footer div {
                 display: flex;
-                font-size: 15px;
-                align-items:center;
-                flex-direction:row;
-                margin:10px 0px 10px 0px;
+                min-height: 50px;
+                justify-content:flex-end;
+                
         }
-        body footer p {
-                width: 50%;
+        #footer a, h5 {
+                margin:0 5px 0 5px;
         }
-       
-
+        #footer a {
+                text-decoration: none;
+                color:black;
+        }
+        #footer a:hover {
+                color:green;
+        }
+        
 
 }
 

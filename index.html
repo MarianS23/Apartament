@@ -1,28 +1,27 @@
 <!DOCTYPE html>
 <html lang="uk">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Apartament in Lviv</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="css/common.css" type="text/css" />
 </head>
-
 <body>
     <header>
         <nav id="language">
-            <a href="indexEng.html" title="ссилка для зміни мови на англійську">Eng</a>
-            <a href="index.html" title="link to change language of the page from english to ukraine">UA</a>
+            <a href="indexEng.html" title="ссилка для зміни мови на англійську" >Eng</a>
+            <a href="index.html" title="link to change language of the page from english to ukraine" class="active">UA</a>
         </nav>
         <div class="main_logo">
-            <h1><a href="index.html">Apartaments in Lviv</a></h1>
-            <h2>quality and comfort</h2>
+            <h1 ><a href="index.html">Apartaments in Lviv</a></h1>
+            <h2 class="blink">quality and comfort</h2>
         </div>
         <nav class="main_menu">
             <ul class="main_menu_list">
-                <li><a href="index.html" title="перейти на головну сторінку">Головна</a></li>
+                <li><a href="index.html" title="перейти на головну сторінку">Головна</a><i class="fas fa-caret-down"></i></li>
                 <li><a href="apartamentpages/apart.html" title="перейти до переліку апартаментів">Апартаменти</a></li>
                 <li><a href="contactspages/contact.html" title="перейти до сторінки співпраці">Співпраця</a></li>
             </ul>
@@ -61,19 +60,17 @@
                             </div>
                         </div>
                     </div>
-                    <a class="carousel-control-prev" href="#carouselApartaments" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-                    <a class="carousel-control-next" href="#carouselApartaments" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+                <a class="carousel-control-prev" href="#carouselApartaments" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselApartaments" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
                 </div>
             </div>
-
         </div>
-
         <div class="textabout">
             <h2 class="textatcenter">Про нас </h2>
             <p>Ми надаємо якісні житлові послуги вже більше 3 років, у нас є велика мережа власників квартир по всьому Львові, тому ми можемо задовольнити будь-які Ваші побажання щодо вартості, розташування та стилю апартаментів</p>
@@ -111,7 +108,6 @@
                     <input type="reset" name="button" value="Скинути">
                 </div>
             </form>
-
             <div class="phonenumber">
                 <hr class="hline">
                 <h2 class="textatcenter">Мобільні номери</h2>
@@ -120,22 +116,22 @@
                 <br>
             </div>
         </div>
-
     </main>
-
-    <footer>
-        <hr class="hline_footer">
-
-        <p>сайт розроблено за допомогою cloud9</p>
+    <hr class="hline_footer">
+    <footer id="footer">
+        <div>
+            <h5>connect with developer:</h5>
+            <a href="#"><i class="fab fa-instagram "></i></a>
+            <a href="#"><i class="far fa-envelope "></i></a>
+        </div>
     </footer>
-
-
-
-
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="js/index.js" async></script>
+    
+    <script src="js/index.js"></script>
+    
+    
+   
 </body>
-
 </html>

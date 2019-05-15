@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Apartament in Lviv</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/common.css" type="text/css" />
 </head>
 
@@ -14,7 +15,7 @@
     <header>
         <nav id="language">
             <a href="#" title="ссилка для зміни мови на англійську">Eng</a>
-            <a href="../index.html" title="link to change language of the page from english to ukraine">UA</a>
+            <a href="../index.html" title="link to change language of the page from english to ukraine" class="active">UA</a>
         </nav>
         <div class="main_logo">
             <h1><a href="../index.html">Apartaments in Lviv</a></h1>
@@ -23,7 +24,7 @@
         <nav class="main_menu">
             <ul class="main_menu_list">
                 <li><a href="../index.html" title="перейти на головну сторінку">Головна</a></li>
-                <li><a href="../apartamentpages/apart.html" title="перейти до переліку апартаментів">Апартаменти</a></li>
+                <li><a href="../apartamentpages/apart.html" title="перейти до переліку апартаментів">Апартаменти</a><i class="fas fa-caret-down"></i></li>
                 <li><a href="../contactspages/contact.html" title="перейти до сторінки співпраці">Співпраця</a></li>
             </ul>
         </nav>
@@ -31,12 +32,13 @@
     <hr>
     <main id="apartaments">
         <div class="row">
+            <!--Products are dynamically generated here-->
             <div class="card col-12 col-sm-6 col-md-4 " style="width: 18rem;">
                 <img src="../img/lvivska.jpg" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">вул.Львівська</h5>
                     <p class="card-text">2-х кімнатні апартаменти в центрі Брюхович.</p>
-                    <a href="#" class="btn btn-info">Info</a>
+                    <a href="#" class="btn btn-info" data-toggle="modal" data-target="#modal-product-info">Info</a>
                 </div>
             </div>
             <div class="card col-12 col-sm-6 col-md-4 " style="width: 18rem;">
@@ -44,7 +46,7 @@
                 <div class="card-body">
                     <h5 class="card-title">вул.Личаківська</h5>
                     <p class="card-text">Однокімнатні апартаменти неподалік від центру Львова.</p>
-                    <a href="#" class="btn btn-info">Info</a>
+                    <a href="#" class="btn btn-info" data-toggle="modal" data-target="#modal-product-info">Info</a>
                 </div>
             </div>
             <div class="card col-12 col-sm-6 col-md-4 " style="width: 18rem;">
@@ -52,7 +54,7 @@
                 <div class="card-body">
                     <h5 class="card-title">вул.Некрасова</h5>
                     <p class="card-text">Однокімнатні апартаменти неподалік від центру Львова.</p>
-                    <a href="#" class="btn btn-info">Info</a>
+                    <a href="#" class="btn btn-info" data-toggle="modal" data-target="#modal-product-info">Info</a>
                 </div>
             </div>
             <div class="card col-12 col-sm-6 col-md-4 " style="width: 18rem;">
@@ -60,20 +62,95 @@
                 <div class="card-body">
                     <h5 class="card-title">вул.Некрасова</h5>
                     <p class="card-text">Однокімнатні апартаменти неподалік від центру Львова.</p>
-                    <a href="#" class="btn btn-info">Info</a>
+                    <a href="#" class="btn btn-info" data-toggle="modal" data-target="#modal-product-info">Info</a>
                 </div>
             </div>
         </div>
-
-
-
     </main>
-    <footer>
-
+        <hr class="hline_footer">
+    <footer id="footer">
+        <div>
+            <h5>connect with developer:</h5>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="far fa-envelope"></i></a>
+        </div>
     </footer>
+    
+    <!-- Modal -->
+        
+            <div class="modal fade bd-example-modal-lg" id="modal-product-info" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                        </div>
+                        <div class="modal-body">
+                            
+                                    <div class="container">
+                                        <div class="bd-example">
+                                            <div id="carouselApartaments" class="carousel slide carousel-fade" data-ride="carousel">
+                                                <ol class="carousel-indicators">
+                                                    <li data-target="#carouselApartaments" data-slide-to="0" class="active"></li>
+                                                    <li data-target="#carouselApartaments" data-slide-to="1"></li>
+                                                    <li data-target="#carouselApartaments" data-slide-to="2"></li>
+                                                    <li data-target="#carouselApartaments" data-slide-to="3"></li>
+                                                    <li data-target="#carouselApartaments" data-slide-to="4"></li>
+                                                </ol>
+                                                <div class="carousel-inner">
+                                                    <div class="carousel-item active">
+                                                        <img src="../img/lvivska.jpg" class="d-block w-100" alt="фото квартири">
+                                                        <div class="carousel-caption d-none d-md-block"></div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../img/lv1.jpg" class="d-block w-100" alt="фото квартири">
+                                                        <div class="carousel-caption d-none d-md-block"></div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../img/lv2.jpg" class="d-block w-100" alt="фото квартири">
+                                                        <div class="carousel-caption d-none d-md-block"></div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../img/lv3.jpg" class="d-block w-100" alt="фото квартири">
+                                                        <div class="carousel-caption d-none d-md-block"></div>
+                                                    </div>
+                                                    <div class="carousel-item">
+                                                        <img src="../img/lv4.jpg" class="d-block w-100" alt="фото квартири">
+                                                        <div class="carousel-caption d-none d-md-block"></div>
+                                                    </div>
+                                                </div>
+                                            <a class="carousel-control-prev" href="#carouselApartaments" role="button" data-slide="prev">
+                                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                              <span class="sr-only">Previous</span>
+                                            </a>
+                                            <a class="carousel-control-next" href="#carouselApartaments" role="button" data-slide="next">
+                                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                              <span class="sr-only">Next</span>
+                                            </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                            <h4 class="card-title">вул.Львівська смт.Брюховичі</h4>
+                            <p class="card-text">2-х кімнатні апартаменти в центрі Брюхович.Розміщена в центрі смт.Брюховичі в 2 хвилинах хотьби від зупинки 
+                            наявна закрита автостоянка.У квартирі повних 4 спальних місця,душова кабіна,пральна машинка....</p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
     <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+    
+    
+    <script src="../js/index.js"></script>
+    
 </body>
 
 </html>
